@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- javascript cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>bapper bank</title>
+</head>
+<body>
+    <header class="bg-yellow-200 py-8">
+        <h1 class="text-center text-3xl font-bold capitalize">baper bank boooooooo</h1>
+    </header>
+    <main>
+        <section class="w-3/4 mx-auto mt-5">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-yellow-300 p-8 rounded">
+                    <h1 class="text-xl">Deposit</h1>
+                    <h3 class="text-2xl">$<span id="deposit-amount">00</span></h3>
+                </div>
+                <div class="bg-purple-300 p-8 rounded">
+                    <h1 class="text-xl">Withdraw</h1>
+                    <h3 class="text-2xl">$<span id="withdraw-amount">00</span></h3>
+                </div>
+                <div class="bg-sky-300 p-8 rounded">
+                    <h1 class="text-xl">Total Blance</h1>
+                    <h3 class="text-2xl">$<span id="total-amount">1250</span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="w-3/4 mx-auto mt-10">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-yellow-300 p-8 rounded ">
+                    <h1 class="text-xl mb-3 text-white">Deposit</h1>
+                    <input id="deposit-field" type="text">
+                    <button id="deposit-btn" class="block bg-sky-300 mt-3 py-3 px-5 rounded text-white">Deposit</button>
+                </div>
+                <div class="bg-purple-300 p-8 rounded ">
+                    <h1 class="text-xl mb-3 text-white">Withdraw</h1>
+                    <input id="withdraw-field" type="text">
+                    <button id="withdraw-btn" class="block bg-sky-300 mt-3 py-3 px-5 rounded text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+        <script src="bank.js"></script>
+</body>
+</html>
